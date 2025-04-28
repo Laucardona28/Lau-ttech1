@@ -3,9 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hoja de vida - Laura Cardona</title>
 </head>
 <body>
-    
-</body>
+<header>
+    <h1>Laura Isabel Cardona</h1>
+    <h2>Docente de básica primaria</h2>
+</header>
+
+<nav>
+ <ul>
+    <li><a href="#Información">Informacion personal</a></li>
+    <li><a href="#Perfil">Perfil profesional</a></li>
+    <li><a href="#Experiencia">Experiencia laboral</a></li>
+    <li><a href="#Idiomas">Idiomas</a></li>
+    <li><a href="#Conocimientos">Conocimientos Técnicos</a></li>
+    <li><a href="#Contacto">Contacto</a></li>
+ </ul>
+</nav>
+
+<section id="Información">
+    <h3>Información personal</h3>
+    <ul>
+        <li>Correo electronico: lauracardona@gmail.com</li>
+        <li>Teléfono: 30196470069</li>
+        <li>Dirección: Tuluá - Colombia</li>
+        </ul>
+    </section>
+
+<section id="Perfil">
+        <h3>Perfil profesional</h3>
+
+        <p>Docente con expariencia en la enseñanza del inglés a niños de basica primaria y Customer Support for your Shopify Apps</p>
+    </section>
+
+<section id="Experiencia">
+        <h3>Experiencia laboral</h3>
+
+    <ol>
+        <li>Empresa: Institución Educativa Alfonso López Pumarejo</li>
+        <li>Empresa: The Support Heroes</li>
+        </ol>
+    </section>
+
+    <section id="Idiomas">
+        <h3>Idiomas</h3>
+        <table border="1" width="100%">
+            <tr bgcolor="caa0e3">
+                <th>Idioma</th>
+                <th>Nivel</th>
+            </tr>
+            <tr>
+                <td>Español</td>
+                <td>Idioma nativo</td>
+            </tr>
+            <tr>
+                <td>Inglés</td>
+                <td>Nivel B1</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="Conocimientos">
+        <h3>Conocimientos Técnicos</h3>
+        <table border="1" width="100%">
+            <tr bgcolor="caa0e3">
+                <th>Conocimiento</th>
+                <th>Nivel</th>
+                <th>Adquirido desde</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>Básico</td>
+                <td>2024.12</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Básico</td>
+                <td>2024.10</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="Contacto">
+        <h3>Formulario de contacto</h3>
+        <p>Ingrese su informacion de contacto</p>
+        <form action="/action_page.php" method="post">
+
+        <label for="fnombre">Nombre completo:</label>
+        <input type="text" id="fnombre" name="fnombre" placeholder="Ingrese su nombre y apellidos"> <br><br>
+
+        <label for="fcorreo">Correo Electronico:</label>
+        <input type="email" id="fcorreo" name="fcorreo" placeholder="ejemplo@correo.com"> <br><br>
+
+        <label for="fasunto">Asunto:</label>
+        <input type="text" id="fasunto" name="fasunto" placeholder="Escriba aqui"> <br><br>
+
+        <label for="ftelefono">Teléfono:</label>
+        <input type="phone" id="ftelefono" name="ftelefono" placeholder="Ingrese su teléfono aqui"> <br><br>
+
+        <label for="fmensaje">Mensaje:</label>
+        <textarea id="fmensaje" name="fmensaje" rows="6" cols="40" placeholder="Ingrese su mensaje aquí" style="resize: none;"></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+        </form>
+
+    </section>
+       </body> 
 </html>
