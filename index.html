@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
 </head>
 <body>
 <header>
-    <img src="https://scontent.fclo14-1.fna.fbcdn.net/v/t39.30808-6/419248483_7545129635530108_3899351850654307275_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHCr8PaAHNAUq6gGO5F7qu-HjzCKjTWvxsePMIqNNa_Gwa9F6wp1cEe1nMcWNQ_p-2-YVoLM-P6xN8AkxaJjbIv&_nc_ohc=1jowim8njIwQ7kNvwEd2BKF&_nc_oc=Adn72wmFp8gBgQwZR9qphlAs0S3lgedFJbIgwLpadQMmZpX0Xamf_w-j0pfzugdNCy0&_nc_zt=23&_nc_ht=scontent.fclo14-1.fna&_nc_gid=SRnlZ7xXmvU0PxyCl8PtiA&oh=00_AfHYMa2u0LIlqjiXdp7UqE85cHhQayztSCPCLGw6wNQYKQ&oe=6819F099" alt="Laura Cardona" class="foto">
+    <img src="https://scontent.fclo14-1.fna.fbcdn.net/v/t39.30808-6/419248483_7545129635530108_3899351850654307275_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHCr8PaAHNAUq6gGO5F7qu-HjzCKjTWvxsePMIqNNa_Gwa9F6wp1cEe1nMcWNQ_p-2-YVoLM-P6xN8AkxaJjbIv&_nc_ohc=Tm7m0dBKr_IQ7kNvwFA6j_w&_nc_oc=AdnRAcBcieSbBJLiIuMcwTVZrHwGdJwX8Qo4TTQUhP8VRhUeZeRBijTDjWx65E6gCz4&_nc_zt=23&_nc_ht=scontent.fclo14-1.fna&_nc_gid=WfApULUmvUu1-7YpSiCeZg&oh=00_AfJcR6BeqCFpsnYT9ZNGRyf8Ddy2h-tQ-9Oy9VMxzyLMNw&oe=68395C59" alt="Laura Cardona" class="foto">
     <h1>Laura Isabel Cardona</h1>
     <h2>Docente de básica primaria</h2>
 </header>
@@ -94,11 +94,15 @@
 
     <section id="Contacto">
         <h3>Formulario de contacto</h3>
-        <p>Ingrese su información de contacto</p>
-        <form action="/action_page.php" method="post">
+        <div id="errores"></div>
+
+        <p>Ingrese su información de contacto:</p><br>
+        <form id="formulario-contacto" action="/action_page.php" method="post">
+            <fieldset>
+                <legend>Contacto</legend><br>
 
         <label for="fnombre">Nombre completo:</label>
-        <input type="text" id="fnombre" name="fnombre" placeholder="Ingrese su nombre y apellidos"> <br><br>
+        <input type="text" id="fnombre" name="fnombre" placeholder="Ingrese su nombre y apellidos" required> <br><br>
 
         <label for="fcorreo">Correo Electronico:</label>
         <input type="email" id="fcorreo" name="fcorreo" placeholder="ejemplo@correo.com"> <br><br>
@@ -107,14 +111,18 @@
         <input type="text" id="fasunto" name="fasunto" placeholder="Escriba aqui"> <br><br>
 
         <label for="ftelefono">Teléfono:</label>
-        <input type="phone" id="ftelefono" name="ftelefono" placeholder="Ingrese su teléfono aqui"> <br><br>
+        <input type="tel" id="ftelefono" name="ftelefono" placeholder="Ingrese su teléfono aqui"> <br><br>
 
         <label for="fmensaje">Mensaje:</label>
         <textarea id="fmensaje" name="fmensaje" rows="6" cols="40" placeholder="Ingrese su mensaje aquí" style="resize: none;"></textarea><br><br>
 
-        <input type="submit" value="Enviar">
+        <input type="submit" value="Enviar" class="boton">
+        </fieldset>
         </form>
 
+        <div id="mensaje-exito">¡Datos enviados correctamente! Pronto nos contactaremos contigo.</div>
+
     </section>
+    <script src="script.js"></script>
        </body> 
 </html>
